@@ -3,11 +3,37 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<html>
+<head>
+    <style>
+        .button {
+            background-color: red; /*red*/
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-size: 12; 
+            border-radius: 12px;
+        }
+        .button2 {
+            background-color: blue;
+        }
+
+        .button3 {
+            background-color: black;
+        }
+    </style>
+</head>
 
 <div class="text-center">
     <h1 class="display-4">Welcome to NetCade</h1>
     <h2>It's @Model.Time  right now on the server!</h2>
-    <button>Game 1</button>
-    <button>Game 2</button>
-    <button>Story Game</button>
+    <button class="button">Game 1</button>
+    <button class="button button2">Game 2</button>
+    <button class="button button3">Story Game</button>
 </div>
+</html>
