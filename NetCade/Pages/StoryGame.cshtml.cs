@@ -9,8 +9,10 @@ namespace NetCade.Pages
 {
     public class StoryGameModel : PageModel
     {
+        public string Time { get; set; }
         public void OnGet()
         {
+            Time = DateTime.Now.ToShortTimeString();
         }
     }
 }
