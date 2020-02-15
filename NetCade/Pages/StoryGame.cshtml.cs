@@ -5,13 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace NetCade.Pages.Shared
+namespace NetCade.Pages
 {
-    public class Game1Model : PageModel
+    public class StoryGameModel : PageModel
     {
         public void OnGet()
         {
-            //This is where the code for game 1 will go
         }
     }
 }
