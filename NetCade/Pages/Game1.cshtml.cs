@@ -9,6 +9,8 @@ namespace NetCade.Pages
 {
     public class Game1Model : PageModel
     {
+        [BindProperty]
+        public string Name { get; set; }
         public string Time { get; set; }
         public void OnGet()
         {

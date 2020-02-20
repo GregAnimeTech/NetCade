@@ -5,10 +5,21 @@
 }
 
 
-<div class="text-center">
-    <h1>@ViewData["Title"]</h1>
-    <h2>It's @Model.Time  right now!</h2>
 
-    /*Code goes here*/
+<div class="text-center" style="margin-top:30px;">
+    <h1>@ViewData["Title"]</h1>
+    <h2> It's @Model.Time right now!</h2>
+
+    <form method="post">
+        <div>Name: <input asp-for="Name" /></div>
+        <div><input type="submit" /></div>
+    </form>
+
+    @if (!string.IsNullOrEmpty(Model.Name))
+    {
+        <p><h2>Hello @Model.Name!</h2></p>
+    }
+
+
 
 </div>
