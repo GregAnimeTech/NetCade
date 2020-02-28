@@ -4,25 +4,148 @@
     ViewData["Title"] = "Story Game";
 }
 
-<iframe>
-    #document
-    <!doctype html>
-    <html>
-    <head></head>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    <body>
-        <div class="text-center">
-            <h1>@ViewData["Title"]</h1>
-            <h2>It's @Model.Time  right now!</h2>
+        body {
+            margin: 0;
+            padding: 10px;
+            background: red;
+        }
 
-            <canvas>
+        /* Style the header */
+        .header {
+            background-color: #cc0000; /*red*/
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        /* Create three unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+            /* Left and right column */
+            .column.side {
+                width: 25%;
+            }
+
+            /* Middle column */
+            .column.middle {
+                width: 75%;
+            }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .story {
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            resize: both;
+            overflow: auto;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: red; /*red*/
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 12px;
+        }
+
+        .button2 {
+            background-color: blue; /*blue*/
+        }
+
+        .button3 {
+            background-color: black; /*black*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>@ViewData["Title"]</h1>
+        <h2>It's @Model.Time  right now!</h2>
+    </div>
+
+    <div class="column middle">
+        <div class="card">
+            <div class="story">
                 <p>
                     This is where your story begins!  You were out having fun with your friends, when out of nowhere you notice somebody running towards your group.
                     Once the person was closer to you, you see that the guy is holding a knife and is still running towards your best friend.
-
                 </p>
-            </canvas>
+            </div>
         </div>
-    </body>
+    </div>
+
+    <div class="column side">
+        <div class="card">
+            <h2>About the Story</h2>
+            <p>
+                Here is some info.
+            </p>
+        </div>
+    </div>
+
+    <div class="column side">
+        <div class="card">
+            <h2>Other Games</h2>
+            <p>
+                <a href="https://localhost:44380/Game1" target="_self"><button class="button">Game 1</button></a>
+                <a href="https://localhost:44380/Game2" target="_self"><button class="button button2">Game 2</button></a>
+            </p>
+        </div>
+    </div>
+
+</body>
 </html>
-</iframe>
