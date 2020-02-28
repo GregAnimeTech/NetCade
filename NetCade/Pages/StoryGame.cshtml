@@ -4,11 +4,17 @@
     ViewData["Title"] = "Story Game";
 }
 
-
-<div class="text-center">
-    <h1>@ViewData["Title"]</h1>
-    <h2>It's @Model.Time  right now!</h2>
-
-
-
-</div>
+<iframe>
+    #document
+    <!doctype html>
+    <html>
+    <head></head>
+    <body>
+        <div class="text-center">
+            <canvas></canvas>
+            <h1>@ViewData["Title"]</h1>
+            <h2>It's @Model.Time  right now!</h2>
+        </div>
+    </body>
+</html>
+</iframe>
