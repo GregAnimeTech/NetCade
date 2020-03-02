@@ -29,7 +29,13 @@ namespace NetCade.Data
                     Name = "Cake",
                     UserName = "ThatAss",
                     Password = "L0L",
-                }
+                },
+                  new UserAccount
+                  {
+                      Name = "Bob",
+                      UserName = "AssIsBest",
+                      Password = "911",
+                  }
             );
             return modelBuilder;
         }
