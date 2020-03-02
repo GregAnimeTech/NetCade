@@ -17,38 +17,44 @@ namespace NetCade.Data.Migrations
 
             modelBuilder.Entity("NetCade.Models.UserAccount", b =>
                 {
+                    b.Property<string>("UserName")
+                        .HasColumnName("UserAccountName")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Password")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("UserName")
-                        .HasColumnName("UserAccountName")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Name");
+                    b.HasKey("UserName");
 
                     b.ToTable("UserAccounts");
 
                     b.HasData(
                         new
                         {
+                            UserName = "FuckMeInAss",
                             Name = "Greg",
-                            Password = "1234",
-                            UserName = "FuckMeInAss"
+                            Password = "1234"
                         },
                         new
                         {
+                            UserName = "Mini-carrot cake",
                             Name = "Carrot Cake",
-                            Password = "899",
-                            UserName = "Mini-carrot cake"
+                            Password = "899"
                         },
                         new
                         {
+                            UserName = "ThatAss",
                             Name = "Cake",
-                            Password = "L0L",
-                            UserName = "ThatAss"
+                            Password = "L0L"
+                        },
+                        new
+                        {
+                            UserName = "AssIsBest",
+                            Name = "Bob",
+                            Password = "911"
                         });
                 });
 #pragma warning restore 612, 618

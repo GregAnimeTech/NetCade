@@ -10,29 +10,34 @@ namespace NetCade.Data.Migrations
                 name: "UserAccounts",
                 columns: table => new
                 {
-                    Name = table.Column<string>(nullable: false),
-                    UserAccountName = table.Column<string>(nullable: true),
+                    UserAccountName = table.Column<string>(nullable: false),
+                    Name = table.Column<string>(nullable: true),
                     Password = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UserAccounts", x => x.Name);
+                    table.PrimaryKey("PK_UserAccounts", x => x.UserAccountName);
                 });
 
             migrationBuilder.InsertData(
                 table: "UserAccounts",
-                columns: new[] { "Name", "Password", "UserAccountName" },
-                values: new object[] { "Greg", "1234", "FuckMeInAss" });
+                columns: new[] { "UserAccountName", "Name", "Password" },
+                values: new object[] { "FuckMeInAss", "Greg", "1234" });
 
             migrationBuilder.InsertData(
                 table: "UserAccounts",
-                columns: new[] { "Name", "Password", "UserAccountName" },
-                values: new object[] { "Carrot Cake", "899", "Mini-carrot cake" });
+                columns: new[] { "UserAccountName", "Name", "Password" },
+                values: new object[] { "Mini-carrot cake", "Carrot Cake", "899" });
 
             migrationBuilder.InsertData(
                 table: "UserAccounts",
-                columns: new[] { "Name", "Password", "UserAccountName" },
-                values: new object[] { "Cake", "L0L", "ThatAss" });
+                columns: new[] { "UserAccountName", "Name", "Password" },
+                values: new object[] { "ThatAss", "Cake", "L0L" });
+
+            migrationBuilder.InsertData(
+                table: "UserAccounts",
+                columns: new[] { "UserAccountName", "Name", "Password" },
+                values: new object[] { "AssIsBest", "Bob", "911" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
