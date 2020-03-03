@@ -1,10 +1,8 @@
 ﻿@page
-@model NetCade.Pages.StoryGameModel
+@model Intro.Pages.IntroModel
 @{
-    ViewData["Title"] = "Story Game";
 }
 
-<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -89,22 +87,22 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1>@ViewData["Title"]</h1>
-        <h2>It's @Model.Time  right now!</h2>
-    </div>
-
     <div class="column middle">
         <div class="card">
             <div class="story">
-                <a href="https://localhost:44380/Intro" target="_self"><button class="button">Play</button></a>
+                <div>
+                    <p>This is the intro to the story!!!</p>
+                </div>
+                <a href="https://localhost:44380/MainStory" target="_self"><button class="button">Path 1</button></a>
+                <a href="https://localhost:44380/MainStory1" target="_self"><button class="button">Path 2</button></a>
+                <a href="https://localhost:44380/MainStory2" target="_self"><button class="button">Path 3</button></a>
             </div>
         </div>
     </div>
 
     <div class="column side">
         <div class="card">
-            <h2>About the Story</h2>
+            <h2>Other info</h2>
             <p>
                 Here is some info.
             </p>
@@ -122,4 +120,3 @@
     </div>
 
 </body>
-</html>
