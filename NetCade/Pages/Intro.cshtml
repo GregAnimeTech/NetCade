@@ -47,21 +47,14 @@
             clear: both;
         }
 
-        .story {
-            border: 2px solid;
-            padding: 20px;
-            width: 300px;
-            resize: both;
-            overflow: auto;
-        }
-
         /* Add a card effect for articles */
         .card {
             background-color: white;
             padding: 20px;
             margin-top: 20px;
         }
-
+    </style>
+    <style id="buttons" type="text/css">
         .button {
             background-color: red; /*red*/
             border: none;
@@ -84,27 +77,30 @@
             background-color: black; /*black*/
         }
     </style>
+
 </head>
 
 <body>
     <div class="column middle">
         <div class="card">
-            <div class="story">
-                <div>
-                    <p>This is the intro to the story!!!</p>
-                </div>
+            <div>
+                <br>You just got transported to a new world filled with magic and swords.
+                <br />
+                <br />
+            </div>
+            <div id="buttons">
                 <a href="https://localhost:44380/MainStory" target="_self"><button class="button">Path 1</button></a>
-                <a href="https://localhost:44380/MainStory1" target="_self"><button class="button">Path 2</button></a>
-                <a href="https://localhost:44380/MainStory2" target="_self"><button class="button">Path 3</button></a>
+                <a href="https://localhost:44380/MainStory1" target="_self"><button class="button button2">Path 2</button></a>
+                <a href="https://localhost:44380/MainStory2" target="_self"><button class="button button3">Path 3</button></a>
             </div>
         </div>
     </div>
 
     <div class="column side">
         <div class="card">
-            <h2>Other info</h2>
+            <h2>Current Stats:</h2>
             <p>
-                Here is some info.
+                Health : 
             </p>
         </div>
     </div>

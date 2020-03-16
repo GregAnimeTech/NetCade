@@ -48,21 +48,14 @@
             clear: both;
         }
 
-        .story {
-            border: 2px solid;
-            padding: 20px;
-            width: 300px;
-            resize: both;
-            overflow: auto;
-        }
-
         /* Add a card effect for articles */
         .card {
             background-color: white;
             padding: 20px;
             margin-top: 20px;
         }
-
+    </style>
+    <style id="buttons" type="text/css">
         .button {
             background-color: red; /*red*/
             border: none;
@@ -95,8 +88,11 @@
 
     <div class="column middle">
         <div class="card">
-            <div class="story">
-                <a href="https://localhost:44380/Intro" target="_self"><button class="button">Play</button></a>
+            <div>
+                <p>This is the start of the story game.  Click the button when you want to play the game.  </p>
+                <div id="buttons">
+                    <a href="https://localhost:44380/Intro" target="_self"><button class="button">Fantasy Story</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -105,7 +101,7 @@
         <div class="card">
             <h2>About the Story</h2>
             <p>
-                Here is some info.
+                This is a basic adventure story.
             </p>
         </div>
     </div>
