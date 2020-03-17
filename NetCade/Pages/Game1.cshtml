@@ -4,22 +4,35 @@
     ViewData["Title"] = "Game 1";
 }
 
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            background: #5e0202; /*dark red*/
+        }
+    </style>
+    <style id="text">
+        p {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+        }
 
+        h1 {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+        }
 
-<div class="text-center" style="margin-top:30px;">
-    <h1>@ViewData["Title"]</h1>
-    <h2> It's @Model.Time right now!</h2>
+        h2 {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+        }
+    </style>
+</head>
 
-    <form method="post">
-        <div>Name: <input asp-for="Name" /></div>
-        <div><input type="submit" /></div>
-    </form>
-
-    @if (!string.IsNullOrEmpty(Model.Name))
-    {
-        <p><h2>Hello @Model.Name!</h2></p>
-    }
-
-
-
-</div>
+<body>
+    <div class="text-center" style="margin-top: 30px;">
+        <h1>@ViewData["Title"]</h1>
+        <h2> It's @Model.Time right now!</h2>
+    </div>
+</body>

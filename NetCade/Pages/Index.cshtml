@@ -3,9 +3,15 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<html>
+
 <head>
     <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            background: #5e0202; /*dark red*/
+        }
+
         .button {
             background-color: red; /*red*/
             border: none;
@@ -28,12 +34,28 @@
             background-color: black; /*black*/
         }
     </style>
+    <style id="text">
+        p {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+        }
+
+        h2 {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+        }
+    </style>
 </head>
 
 <body>
     <div class="text-center">
         <h1 class="display-4">Welcome to NetCade</h1>
-        @*<h2>It's @Model.Time  right now on the server!</h2>*@
+        <h2>It's @Model.Time  right now on the server!</h2>
         <p>
             You get to chose which game you want to play.
         </p>
@@ -41,6 +63,4 @@
         <a href="https://localhost:44380/Game2" target="_self"><button class="button button2">Game 2</button></a>
         <a href="https://localhost:44380/StoryGame" target="_self"><button class="button button3">Story Game</button></a>
     </div>
-
 </body>
-</html>

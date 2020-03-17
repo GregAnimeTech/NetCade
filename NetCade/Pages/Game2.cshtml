@@ -4,11 +4,35 @@
     ViewData["Title"] = "Game 2";
 }
 
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            background: #5e0202; /*dark red*/
+        }
+    </style>
+    <style id="text">
+        p {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+        }
 
-<div class="text-center">
-    <h1>@ViewData["Title"]</h1>
-    <h2>It's @Model.Time  right now!</h2>
+        h1 {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+        }
 
+        h2 {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+        }
+    </style>
+</head>
 
-
-</div>
+<body>
+    <div class="text-center">
+        <h1>@ViewData["Title"]</h1>
+        <h2>It's @Model.Time  right now!</h2>
+    </div>
+</body>
