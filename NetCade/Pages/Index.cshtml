@@ -8,12 +8,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             padding: 10px;
             background: #5e0202; /*dark red*/
         }
 
+        /* Style the header */
+        .header {
+            background-color: #5e0202; /*dark red*/
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Create 2 unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+            /* Left and right column */
+            .column.side {
+                width: 25%;
+            }
+
+            /* Middle column */
+            .column.middle {
+                width: 75%;
+            }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: #555454;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+    <style id="buttons" type="text/css">
         .button {
             background-color: red; /*red*/
             border: none;
@@ -24,8 +66,8 @@
             display: inline-block;
             margin: 4px 2px;
             cursor: pointer;
-            font-size: 14px;
-            border-radius: 12px;
+            font-size: 20px;
+            border-radius: 14px;
         }
 
         .button2 {
@@ -40,6 +82,7 @@
         p {
             color: #ffffff;
             text-shadow: 2px 2px black;
+            font-size: 20px;
         }
 
         h1 {
@@ -58,11 +101,42 @@
     <div class="text-center">
         <h1 class="display-4">Welcome to NetCade</h1>
         <h2>It's @Model.Time  right now on the server!</h2>
-        <p>
-            You get to chose which game you want to play.
-        </p>
-        <a href="https://localhost:44380/Game1" target="_self"><button class="button">Game 1</button></a>
-        <a href="https://localhost:44380/Game2" target="_self"><button class="button button2">Game 2</button></a>
-        <a href="https://localhost:44380/StoryGame" target="_self"><button class="button button3">Story Game</button></a>
+
+        <div class="column middle">
+            <div class="card">
+                <p>
+                    Pick the game that you want to play!
+                    <br />
+                    The first option is an endless game. (You keep playing until your character dies.)
+                    <br />
+                    <br />
+                    The second option is another endless game.
+                    <br />
+                    <br />
+                    The last option is a story game.
+                    <br />
+                    <br />
+                </p>
+            </div>
+        </div>
+
+        <div class="column side">
+            <div class="card">
+                <a href="https://localhost:44380/Game1" target="_self"><button class="button">Game 1</button></a>
+            </div>
+        </div>
+
+        <div class="column side">
+            <div class="card">
+                <a href="https://localhost:44380/Game2" target="_self"><button class="button button2">Game 2</button></a>
+            </div>
+        </div>
+
+        <div class="column side">
+            <div class="card">
+                <a href="https://localhost:44380/StoryGame" target="_self"><button class="button button3">Story Game</button></a>
+            </div>
+        </div>
+
     </div>
 </body>
