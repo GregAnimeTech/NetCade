@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using NetCade.App_Code;
 
 namespace NetCade.Pages
 {
@@ -20,5 +21,12 @@ namespace NetCade.Pages
         {
             Time = DateTime.Now.ToShortTimeString();
         }
+        //public partial class Default
+        //{
+        //    protected void Page_Load(object sender, EventArgs e)
+        //    {
+        //       // int ChHealth = PlayerHealth;
+        //    }
+        //}
     }
 }
