@@ -57,7 +57,7 @@
     </style>
     <style id="buttons" type="text/css">
         .button {
-            background-color: red; /*red*/
+            background-color: #00a9ff; /*light blue*/
             border: none;
             color: white;
             padding: 15px 32px;
@@ -71,11 +71,11 @@
         }
 
         .button2 {
-            background-color: blue; /*blue*/
+            background-color: #004bff; /*blue*/
         }
 
         .button3 {
-            background-color: black; /*black*/
+            background-color: #00d425; /*Green*/
         }
     </style>
     <style id="text">
@@ -97,46 +97,44 @@
     </style>
 </head>
 
-<body>
-    <div class="text-center">
+<body class="header">
+    <div>
         <h1 class="display-4">Welcome to NetCade</h1>
         <h2>It's @Model.Time  right now on the server!</h2>
-
-        <div class="column middle">
-            <div class="card">
-                <p>
-                    Pick the game that you want to play!
-                    <br />
-                    The first option is an endless game. (You keep playing until your character dies.)
-                    <br />
-                    <br />
-                    The second option is another endless game.
-                    <br />
-                    <br />
-                    The last option is a story game.
-                    <br />
-                    <br />
-                </p>
-            </div>
-        </div>
-
-        <div class="column side">
-            <div class="card">
-                <a href="https://localhost:44380/Game1" target="_self"><button class="button">Game 1</button></a>
-            </div>
-        </div>
-
-        <div class="column side">
-            <div class="card">
-                <a href="https://localhost:44380/Game2" target="_self"><button class="button button2">Game 2</button></a>
-            </div>
-        </div>
-
-        <div class="column side">
-            <div class="card">
-                <a href="https://localhost:44380/StoryGame" target="_self"><button class="button button3">Story Game</button></a>
-            </div>
-        </div>
-
     </div>
+
+    <div class="column middle">
+        <div class="card">
+            <p>
+                Pick the game that you want to play!
+                <br />
+                The first option is an endless game. (You keep playing until your character dies.)
+                <br />
+                <br />
+                The second option is another endless game.
+                <br />
+                <br />
+                The last option is a story game.  (You read the story and pick the path that you want to take.)
+            </p>
+        </div>
+    </div>
+
+    <div class="column side">
+        <div class="card">
+            <a href="https://localhost:44380/Game1" target="_self"><button class="button">Jelly Run</button></a>
+        </div>
+    </div>
+
+    <div class="column side">
+        <div class="card">
+            <a href="https://localhost:44380/Game2" target="_self"><button class="button button2">Game 2</button></a>
+        </div>
+    </div>
+
+    <div class="column side">
+        <div class="card">
+            <a href="https://localhost:44380/StoryGame" target="_self"><button class="button button3">Story Game</button></a>
+        </div>
+    </div>
+
 </body>
