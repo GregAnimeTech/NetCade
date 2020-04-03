@@ -1,4 +1,135 @@
 ﻿@page
 @model NetCade.Pages.Option1Model
 @{
+    ViewData["Title"] = "Play a game";
 }
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 10px;
+            background: #5e0202; /*dark red*/
+        }
+
+        /* Style the header */
+        .header {
+            background-color: #5e0202; /*dark red*/
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Create 2 unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+            /* Left and right column */
+            .column.side {
+                width: 25%;
+            }
+
+            /* Middle column */
+            .column.middle {
+                width: 75%;
+            }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: #555454;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+    <style id="buttons" type="text/css">
+        .button {
+            background-color: #00a9ff; /*light blue*/
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 14px;
+        }
+
+        .button2 {
+            background-color: #004bff; /*blue*/
+        }
+
+        .button3 {
+            background-color: #00d425; /*Green*/
+        }
+    </style>
+    <style id="text">
+        p {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+            font-size: 20px;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+        }
+
+        h2 {
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="column middle">
+        <div class="card">
+            <div>
+                <p>
+                    You did it, you are one with courage and the determination.  You are going to do great in this new world and have fun doing everything you want to.  
+                    <br />
+                    Since you chose the correct answer, you don’t lose any health congratulations.
+                    <br />
+                    <div class="text-center">
+                        <a href="https://localhost:44380/End1" target="_self"><button class="button button2">End</button></a>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column side">
+        <div class="card">
+            <h2>Current Stats:</h2>
+            <p>
+                Health : 100
+            </p>
+        </div>
+    </div>
+
+    <div class="column side">
+        <div class="card">
+            <h2>Other Games</h2>
+            <p>
+                <a href="https://localhost:44380/Game1" target="_self"><button class="button">Jelly Run</button></a>
+                <a href="https://localhost:44380/Game2" target="_self"><button class="button button2">Game 2</button></a>
+            </p>
+        </div>
+    </div>
+</body>

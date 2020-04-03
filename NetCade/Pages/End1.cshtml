@@ -1,7 +1,7 @@
 ﻿@page
-@model NetCade.Pages.StoryGameModel
+@model NetCade.Pages.End1Model
 @{
-    ViewData["Title"] = "Story Game";
+    ViewData["Title"] = "End 1";
 }
 
 <head>
@@ -20,6 +20,7 @@
 
         /* Style the header */
         .header {
+            background-color: #5e0202; /*dark red*/
             padding: 20px;
             text-align: center;
         }
@@ -75,7 +76,6 @@
 
         .button3 {
             background-color: #00d425; /*Green*/
-            color: black; /*black*/
         }
     </style>
     <style id="text">
@@ -94,41 +94,38 @@
             color: #ffffff;
             text-shadow: 2px 2px black;
         }
+
+        .strong {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px black;
+            font-size: 48px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <h1>@ViewData["Title"]</h1>
-        <h2>It's @Model.Time  right now!</h2>
-    </div>
-
     <div class="column middle">
         <div class="card">
             <div>
-                <br />
-                <br />
-                <p>This is the start of the story game.  Click the button when you want to play the game.  </p>
-                <br />
-                <div class="header">
-                    <a href="https://localhost:44380/Intro" target="_self"><button class="button">Fantasy Story</button></a>
+                <p>
+                    You keep doing good in your new life, so it becomes easy to live.  
                     <br />
+                    I hope you enjoied this short story.
                     <br />
-                    <br />
-                    <br />
-                    <br />
-                </div>
+                    <div class="strong">
+                        <strong>Thank you for playing.</strong>
+                    </div>
+                </p>
             </div>
         </div>
     </div>
 
     <div class="column side">
         <div class="card">
-            <h2>About the Story</h2>
+            <h2>Current Stats:</h2>
             <p>
-                This adventure story that will take you on a journey.
-                <br />
-                Take your time and enjoy the story!
+                Health : 100
             </p>
         </div>
     </div>
