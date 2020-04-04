@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\Build for Game\**" />
+    <Content Remove="wwwroot\Build for Game\**" />
+    <EmbeddedResource Remove="wwwroot\Build for Game\**" />
+    <None Remove="wwwroot\Build for Game\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
