@@ -18,12 +18,12 @@ namespace NetCade.Pages
             Time = DateTime.Now.ToShortTimeString();
         }
 
-        app.UseFileServer();
-                StaticFileOptions option = new StaticFileOptions();
-        FileExtensionContentTypeProvider contentTypeProvider = (FileExtensionContentTypeProvider)option.ContentTypeProvider ??
-        new FileExtensionContentTypeProvider();
-        contentTypeProvider.Mappings.Add(".unityweb", "application/octet-stream");
-                option.ContentTypeProvider = contentTypeProvider;
-                app.UseStaticFiles(option);
+        //app.UseFileServer();
+        //        StaticFileOptions option = new StaticFileOptions();
+        //FileExtensionContentTypeProvider contentTypeProvider = (FileExtensionContentTypeProvider)option.ContentTypeProvider ??
+        //new FileExtensionContentTypeProvider();
+        //contentTypeProvider.Mappings.Add(".unityweb", "application/octet-stream");
+        //        option.ContentTypeProvider = contentTypeProvider;
+        //        app.UseStaticFiles(option);
     }
 }

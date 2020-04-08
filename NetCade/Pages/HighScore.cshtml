@@ -1,8 +1,10 @@
 ﻿@page
-@model NetCade.Pages.Game2Model
+@model NetCade.Pages.HighScoreModel
 @{
-    ViewData["Title"] = "Game 2";
+    ViewData["Title"] = "High Score";
 }
+
+
 
 <head>
     <meta charset="utf-8">
@@ -33,12 +35,12 @@
 
             /* Left and right column */
             .column.side {
-                width: 25%;
+                width: 50%;
             }
 
             /* Middle column */
             .column.middle {
-                width: 75%;
+                width: 50%;
             }
 
         /* Clear floats after the columns */
@@ -98,23 +100,48 @@
     </style>
 </head>
 
-<body>
-    <div class="header">
-        <div class="column middle">
-            <div class="card">
-                <h1>@ViewData["Title"]</h1>
-                <h2> It's @Model.Time right now!</h2>
-            </div>
+<h1>@ViewData["Title"]</h1>
+<br />
+<br />
+
+<body class="header">
+    <div class="column middle">
+        <h2>Jelly Run</h2>
+        <br />
+        <div class="card">
+            <p>Player 1</p>
         </div>
-        
-        <div class="column side">
-            <div class="card">
-                <h2>Other Games</h2>
-                <p>
-                    <a href="https://localhost:44380/StoryGame" target="_self"><button class="button button3">Story Game</button></a>
-                    <a href="https://localhost:44380/Game1" target="_self"><button class="button">Jelly Run</button></a>
-                </p>
-            </div>
+        <div class="card">
+            <p>Player 2</p>
+        </div>
+        <div class="card">
+            <p>Player 3</p>
+        </div>
+        <div class="card">
+            <p>Player 4</p>
+        </div>
+        <div class="card">
+            <p>Player 5</p>
+        </div>
+    </div>
+
+    <div class="column side">
+        <h2>Game 2</h2>
+        <br />
+        <div class="card">
+            <p>Player 1</p>
+        </div>
+        <div class="card">
+            <p>Player 2</p>
+        </div>
+        <div class="card">
+            <p>Player 3</p>
+        </div>
+        <div class="card">
+            <p>Player 4</p>
+        </div>
+        <div class="card">
+            <p>Player 5</p>
         </div>
     </div>
 
