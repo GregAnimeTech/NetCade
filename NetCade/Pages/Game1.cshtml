@@ -99,24 +99,29 @@
 </head>
 
 <body class="header">
-        <div class="column middle" >
-            <div class="card">
-                <h1>@ViewData["Title"]</h1>
-                <h2> It's @Model.Time right now!</h2>
-            </div>
-            <div>
-
-            </div>
+    <div class="column middle">
+        <div class="card">
+            <h1>@ViewData["Title"]</h1>
         </div>
-
-        <div class="column side">
-            <div class="card">
-                <h2>Other Games</h2>
-                <p>
-                    <a href="https://localhost:44380/StoryGame" target="_self"><button class="button button3">Story Game</button></a>
-                    <a href="https://localhost:44380/Game2" target="_self"><button class="button button2">Game 2</button></a>
-                </p>
-            </div>
+        <div>
+            <object id="UnityObject" classid="clsid:444785F1-DE89-4295-863A-D46C3A781394"
+                    width="800" height="800"
+                    codebase="JellyRunHTML.wasm.code.unityweb">
+                    <param name="unity3d" value="WebPlayer.unity3d" />
+                    <embed id="UnityEmbed" src="~/Build/" width="800" height="800"
+                           type="application/vnd.unity" pluginspage="JellyRunHTML.wasm.framework.unityweb" />
+                    </object>
         </div>
+    </div>
+
+    <div class="column side">
+        <div class="card">
+            <h2>Other Games</h2>
+            <p>
+                <a href="https://localhost:44380/StoryGame" target="_self"><button class="button button3">Story Game</button></a>
+                <a href="https://localhost:44380/Game2" target="_self"><button class="button button2">Game 2</button></a>
+            </p>
+        </div>
+    </div>
 
 </body>
