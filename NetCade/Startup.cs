@@ -46,7 +46,7 @@ namespace NetCade
             //StaticFileOptions option = new StaticFileOptions();
             //FileExtensionContentTypeProvider contentTypeProvider = (FileExtensionContentTypeProvider)option.ContentTypeProvider ??
             //new FileExtensionContentTypeProvider();
-            //contentTypeProvider.Mappings.Add(".unityweb.gz", "application/json");
+            //contentTypeProvider.Mappings.Add(".unityweb", "application/octet-stream");
             //option.ContentTypeProvider = contentTypeProvider;
             //app.UseStaticFiles(option);
 
