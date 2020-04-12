@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.StaticFiles;
+using System.Web;
 
 namespace NetCade.Pages
 {
@@ -17,13 +17,13 @@ namespace NetCade.Pages
         {
             Time = DateTime.Now.ToShortTimeString();
         }
+        //public void Link_Click()
+        //{
+        //    Response.ContentType = "application/octect-stream";
+        //    Response.AppendHeader("content-disposition", "filename=SEP Game 1.exe");
+        //    Response.TransmitFile(Server.MapPath("~/JellyRunBuild/Sep Game 1.exe"));
+        //    Response.End();
+        //}
 
-        //app.UseFileServer();
-        //        StaticFileOptions option = new StaticFileOptions();
-        //FileExtensionContentTypeProvider contentTypeProvider = (FileExtensionContentTypeProvider)option.ContentTypeProvider ??
-        //new FileExtensionContentTypeProvider();
-        //contentTypeProvider.Mappings.Add(".unityweb", "application/octet-stream");
-        //        option.ContentTypeProvider = contentTypeProvider;
-        //        app.UseStaticFiles(option);
     }
 }

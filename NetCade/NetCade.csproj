@@ -7,9 +7,17 @@
 
   <ItemGroup>
     <Compile Remove="wwwroot\Build for Game\**" />
+    <Compile Remove="wwwroot\MonoBleedingEdge\**" />
+    <Compile Remove="wwwroot\SEP Game 1_Data\**" />
     <Content Remove="wwwroot\Build for Game\**" />
+    <Content Remove="wwwroot\MonoBleedingEdge\**" />
+    <Content Remove="wwwroot\SEP Game 1_Data\**" />
     <EmbeddedResource Remove="wwwroot\Build for Game\**" />
+    <EmbeddedResource Remove="wwwroot\MonoBleedingEdge\**" />
+    <EmbeddedResource Remove="wwwroot\SEP Game 1_Data\**" />
     <None Remove="wwwroot\Build for Game\**" />
+    <None Remove="wwwroot\MonoBleedingEdge\**" />
+    <None Remove="wwwroot\SEP Game 1_Data\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,7 +29,6 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.3" />
     <PackageReference Include="Microsoft.NETCore.Targets.NETFramework" Version="4.6.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
-    <PackageReference Include="Unity.Mvc3" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -43,12 +43,11 @@ namespace NetCade
 
             //Game build for unity
             //app.UseFileServer();
-            //StaticFileOptions option = new StaticFileOptions();
-            //FileExtensionContentTypeProvider contentTypeProvider = (FileExtensionContentTypeProvider)option.ContentTypeProvider ??
-            //new FileExtensionContentTypeProvider();
+            //var options = new StaticFileOptions();
+            //var contentTypeProvider = (FileExtensionContentTypeProvider)options.ContentTypeProvider ?? new FileExtensionContentTypeProvider();
             //contentTypeProvider.Mappings.Add(".unityweb", "application/octet-stream");
-            //option.ContentTypeProvider = contentTypeProvider;
-            //app.UseStaticFiles(option);
+            //options.ContentTypeProvider = contentTypeProvider;
+            //app.UseStaticFiles(options);
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
