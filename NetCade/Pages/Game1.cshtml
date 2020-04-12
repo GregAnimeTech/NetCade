@@ -96,15 +96,6 @@
             text-shadow: 2px 2px black;
         }
     </style>
-    @*<meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <title>Unity WebGl Player</title>
-        <link rel="shortcut icon" href="~/TemplateData/favicon.ico" />
-        <link rel="stylesheet" href="~/TemplateData/style.css" />
-        <script src="~/TemplateData/UnityProgress.js"></script>
-        <script src="~/Build/UnityLoader.js"></script>
-        <script>
-            var gameInstance = UnityLoader.instantiate("gameContainer", "/Build/JellyRunHTML.json", { onProgress: UnityProgress})
-        </script>*@
 </head>
 
 <body class="header">
@@ -112,18 +103,10 @@
         <div class="card">
             <h1>@ViewData["Title"]</h1>
         </div>
-        @*<div class="webgl-content">
-                <div id="gameContainer" style="width: 960px; height: 600px"></div>
-                <div class="footer">
-                    <div class="webgl-logo"></div>
-                    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-                    <div class="title">JellyRun</div>
-                </div>
-            </div>*@
 
-    <p>
-        <a href="~/JellyRunBuild/SEP Game 1.exe" target="_blank">Download Game</a>
-    </p>
+        <div class="card">
+            <a href="~/JellyRunBuild.zip" download="Jelly Run"><p>Download Jelly Run</p></a>
+        </div>
     </div>
 
     <div class="column side">

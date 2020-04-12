@@ -98,31 +98,24 @@
     </style>
 </head>
 
-<body>
-    <div class="header">
-        <div class="column middle">
-            <div class="card">
-                <h1>@ViewData["Title"]</h1>
-                <div>
-                    <object id="UnityObject" classid="clsid:444785F1-DE89-4295-863A-D46C3A781394"
-                            width="800" height="800"
-                            codebase="http://webplayer.unity3d.com/download_webplayer/UnityWebPlayer.cab#version=2,0,0,0">
-                        <param name="unity3d" value="WebPlayer.unity3d" />
-                        <embed id="UnityEmbed" src="~/JellyRunBuild/" width="800" height="800"
-                               type="application/vnd.unity" pluginspage="http://www.unity3d.com/unity-web-player-2.x" />
-                    </object>
-                </div>
-            </div>
+<body class="header">
+    <div class="column middle">
+        <div class="card">
+            <h1>@ViewData["Title"]</h1>
         </div>
-        
-        <div class="column side">
-            <div class="card">
-                <h2>Other Games</h2>
-                <p>
-                    <a href="https://localhost:44380/StoryGame" target="_self"><button class="button button3">Story Game</button></a>
-                    <a href="https://localhost:44380/Game1" target="_self"><button class="button">Jelly Run</button></a>
-                </p>
-            </div>
+
+        <div class="card">
+            <a href="~/DinoBounceBuild.zip" download="Dino Bounce"><p>Download Dino Bounce</p></a>
+        </div>
+    </div>
+
+    <div class="column side">
+        <div class="card">
+            <h2>Other Games</h2>
+            <p>
+                <a href="https://localhost:44380/StoryGame" target="_self"><button class="button button3">Story Game</button></a>
+                <a href="https://localhost:44380/Game1" target="_self"><button class="button">Jelly Run</button></a>
+            </p>
         </div>
     </div>
 
